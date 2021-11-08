@@ -1,5 +1,7 @@
-<p><em><%=  params[:answer] %></em></p>
-<p>- You</p>
+<p class="reply"><%=  params[:answer] %></p>
+<p class="author">- You</p>
 
-<p><em><%= @coach_reply %></em></p>
-<p>- The Coach</p>
+<p class="reply"><%= @coach_reply %></p>
+<p class="author">- The Coach</p>
+
+<p><%= link_to "ask another question", ask_path %></p>
